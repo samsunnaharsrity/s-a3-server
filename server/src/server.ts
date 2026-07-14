@@ -9,9 +9,9 @@ const PORT = process.env.PORT || 7000;
 const startServer = async () => {
   await connectDB();
 
-  app.listen(PORT, () => {
-    console.log(`Server Running On ${PORT}`);
-  });
+app.get("/", (req, res) => {
+  res.send("StudyNook API Running .....");
+});
 };
 
 startServer();
