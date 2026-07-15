@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import serverless from "serverless-http";
-import { connectDB } from "./config/mongodb";
 import app from "./app";
+import { connectDB } from "./config/mongodb";
 
 dotenv.config();
 
