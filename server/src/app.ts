@@ -143,7 +143,7 @@ app.get("/api/hello", (req, res) => {
 
 
 // Root Route
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.send("StudyNook API Running...");
 });
 
