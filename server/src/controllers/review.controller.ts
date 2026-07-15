@@ -159,7 +159,7 @@ export const addReview = async (
       comment,
       createdAt: new Date(),
     };
-
+console.log(review);
     const result = await db.collection("reviews").insertOne(review);
 
     return res.status(201).json({
@@ -169,7 +169,7 @@ export const addReview = async (
       review,
     });
   } catch (error) {
-    console.error("Add Review Error:", error);
+    console.error( error);
 
     return res.status(500).json({
       success: false,
